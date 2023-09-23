@@ -9,7 +9,7 @@ export function createFooter(): Node {
   (footer as HTMLElement).classList.add('footer');
   (footer as HTMLElement).innerHTML = `
             <div class="footer__links-wrapper">
-                <a class="footer__link" href="https://github.com/rolling-scopes-school/idiamondcat-JSFE2023Q1" target="_blank">
+                <a class="footer__link" href="https://github.com/idiamondcat" target="_blank">
                     <img class="footer__icon footer__icon--git" src=${gitLogo}>
                 </a>
                 <a class="footer__link" href="https://rs.school/js/" target="_blank">
