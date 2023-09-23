@@ -1,0 +1,55 @@
+.editor {
+    width: 50%;
+    & .editor__header {
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 2px 2px 0 0;
+    }
+    & .editor__workspace {
+        position: relative;
+        padding-right: 10px;
+        background-color: #f0e3dd;
+        & .workspace__line-list {
+            background-color:  #BDB2AE;
+        }
+    }
+    & .editor__wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+    & .editor__entry-field {
+        padding: 3px 10px;
+        flex-grow: 1;
+        border: none;
+        background-color: #f0e3dd;
+        font: {
+            family: "SourceCodePro-Light", PT Mono, monospace;
+            size: 14px;
+            weight: 300;
+        }
+        line-height: 19px;
+        &:active, &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    & .editor__enter-btn {
+        background-color: #dddddd;
+        color: #999999;
+        border: none;
+        box-shadow: 0px 6px 0px 2px #999999;
+        -webkit-box-shadow: 0px 6px 0px 2px #999999;
+        -moz-box-shadow: 0px 6px 0px 2px #999999;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 649px) {
+        width: 100%;
+    }
+}

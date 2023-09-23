@@ -1,0 +1,195 @@
+tea {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 3px solid grey;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -34px;
+        height: 50px;
+        width: 30px;
+        border-right: 3px solid grey;
+        border-top: 3px solid grey;
+        border-bottom: 3px solid grey;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 70%;
+    }
+    &.matcha-latte {
+        background: linear-gradient(to top, $matcha 30%, $matcha 70%,
+        $milk 70%, $milk 90%, transparent 90%, transparent 100%);
+    }
+    &.thai {
+        background: linear-gradient(to top, $thai-tea 30%, $thai-tea 70%,
+        $milk 70%, $milk 90%, transparent 90%, transparent 100%);
+    }
+    &.taiwanese {
+        background: linear-gradient(to top, $taiwanese-tea 30%, $taiwanese-tea 70%,
+        $milk 70%, $milk 90%, transparent 90%, transparent 100%);
+    }
+    &.strawberry, &#strawberry {
+        background: linear-gradient(to top, $black-tea 30%,
+        $strawberry-syrup 30%, $strawberry-syrup 90%, transparent 90%, transparent 100%);
+    }
+    &.green {
+        background: linear-gradient(to top, $green-tea 90%, transparent 90%, transparent 100%);
+    }
+    &.black {
+        background: linear-gradient(to top, $black-tea 90%, transparent 90%, transparent 100%);
+    }
+}
+icedtea {
+    position: relative;
+    width: 80px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 3px solid grey;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -34px;
+        height: 50px;
+        width: 30px;
+        border-right: 3px solid grey;
+        border-top: 3px solid grey;
+        border-bottom: 3px solid grey;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 70%;
+    }
+    &.lime {
+        background: linear-gradient(to top, $black-tea 40%, $lime-syrup 40%,
+        $lime-syrup 90%, transparent 90%, transparent 100%);
+    }
+    &.ginger {
+        background: linear-gradient(to top, $ginger 90%, transparent 90%, transparent 100%);
+    }
+    &.lychee {
+        background: linear-gradient(to top, $black-tea 40%, $lychee 40%,
+        $lychee 90%, transparent 90%, transparent 100%);
+    }
+    &.thai {
+        background: linear-gradient(to top, $thai-tea 70%, $milk 70%, $milk 90%, transparent 90%, transparent 100%);
+    }
+}
+soda {
+    width: 94px;
+    height: 133px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: grey;
+    clip-path: polygon(10% 0, 94% 0, 78% 100%, 23% 100%);
+    -webkit-clip-path: polygon(10% 0, 94% 0, 78% 100%, 23% 100%);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    &::before {
+        content: '';
+        width: 88px;
+        height: 127px;
+        position: absolute;
+        display: block;
+        top: 3px;
+        left: 3px;
+        background-color: rosybrown;
+        clip-path: polygon(10% 0, 94% 0, 78% 100%, 23% 100%);
+        -webkit-clip-path: polygon(10% 0, 94% 0, 78% 100%, 23% 100%);
+    }
+    &.yuzu {
+        &::before {
+            background: linear-gradient(to top, $yuzu 70%, #ffffff 100%);
+        }
+    }
+    &.lychee {
+        &::before {
+            background: linear-gradient(to top, $lychee 70%, #ffffff 100%);
+        }
+    }
+    &.melon {
+        &::before {
+            background: linear-gradient(to top, $melon 70%, #ffffff 100%);
+        }
+    }
+}
+// @media screen and (max-width: 1189px) {
+//     tea {
+//         width: 80px;
+//         height: 64px;
+//         // border-width: 2px;
+//         &::after {
+//             height: 32px;
+//             width: 19.2px;
+//             right: -25px;
+//         }
+//     }
+//     icedtea {
+//         width: 60px;
+//         height: 82.5px;
+//         &::before {
+//             height: 32px;
+//             width: 19.2px;
+//             right: -25px;
+//             top: 14px;
+//         }
+//     }
+//     soda {
+//         width: 74px;
+//         height: 104.7px;
+//         &::before {
+//             height: 98.1px;
+//             width: 68px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 739px) {
+//     tea {
+//         width: 60px;
+//         height: 48px;
+//         border-width: 2px;
+//         &::after {
+//             height: 25px;
+//             width: 15px;
+//             right: -20px;
+//         }
+//     }
+//     icedtea {
+//         width: 40px;
+//         height: 55px;
+//         border-width: 2px;
+//         &::before {
+//             height: 25px;
+//             width: 15px;
+//             right: -20px;
+//             top: 9px;
+//         }
+//     }
+//     soda {
+//         width: 54px;
+//         height: 76.4px;
+//         border-width: 2px;
+//         &::before {
+//             height: 72.2px;
+//             width: 50px;
+//             top: 2px;
+//             left: 2px;
+//         }
+//     }
+// }

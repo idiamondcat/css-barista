@@ -1,0 +1,63 @@
+.view {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../img/cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .view__title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    & .view__help-btn {
+        background-color: rgba(0,0,0,.2);
+        color: rgba(255, 255, 255, 0.3);
+        padding: 8px 15px 10px 15px;
+        border: none;
+        border-radius: 20px;
+        font: {
+            size: 1rem;
+        }
+        margin-bottom: 15px;
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+    & .view__gamefield {
+        width: 100%;
+        margin-top: auto;
+    }
+    & .view__table {
+        height: 10px;
+        width: 100%;
+        background-color: #f0e3dd;
+    }
+    & .view__drinks-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        column-gap: 50px;
+        & * {
+            flex-shrink: 0;
+        }
+    }
+    @media screen and (max-width: 1189px) {
+        & .view__gamefield {
+            zoom: 0.8;
+        }
+    }
+    @media screen and (max-width: 739px) {
+        min-height: 300px;
+        & .view__gamefield {
+            zoom: 0.6;
+        }
+    }
+    @media screen and (max-width: 525px) and (min-width: 445px) {
+        & .view__gamefield {
+            zoom: 0.5;
+        }
+    }
+}

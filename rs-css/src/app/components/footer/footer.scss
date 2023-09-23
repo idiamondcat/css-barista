@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    padding: 16px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    & .footer__links-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+    }
+    & .footer__link {
+        width: 112px;
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+    & .footer__year {
+        color: #f0e3dd;
+    }
+}
