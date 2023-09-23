@@ -1,0 +1,86 @@
+.level {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    & .level__title {
+        font: {
+            family: "Exo2", Lato, sans-serif;
+            size: 25px;
+            weight: 400;
+        }
+        color: #777777;
+    }
+    & .level__list {
+        margin-bottom: 34px;
+    }
+    & .level__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 15px;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.2s ease-in;
+        }
+        &.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+    & .level__num {
+        color: #f0e3dd;
+    }
+    & .level__indicator {
+        display: block;
+        width: 18px;
+        height: 18px;
+        &.clue {
+            background-image: url("../../../img/help.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        &.correct {
+            background-image: url("../../../img/check.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+    & .level__reset-btn {
+        width: 100%;
+        background-color: transparent;
+        border: solid 2px #f0e3dd;
+        color: #f0e3dd;
+        margin: 0 auto;
+        padding: 9px 0 11px 0;
+        font: {
+            family: "Exo2", Lato, sans-serif;
+            size: 1rem;
+            weight: 400;
+        }
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+    @media screen and (max-width: 1129px) {
+        max-width: 375px;
+        display: none;
+        &.level--active {
+            width: 375px;
+            display: block;
+            left: 0;
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 10;
+        }
+    }
+}
