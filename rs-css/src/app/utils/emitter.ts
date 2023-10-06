@@ -1,6 +1,6 @@
 import { ILevel } from './types';
 
-type Multi = string | number | boolean | ILevel;
+type Multi = string | number | boolean | ILevel | ILevel[];
 type EventHandler<T extends Multi[]> = (...args: T) => void;
 type Obj = Record<string, Set<Function>>;
 

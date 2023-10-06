@@ -1,4 +1,4 @@
 import './scss/style.scss';
-import App from './app/app';
+import init from './app/app';
 
-const app = new App();
+init();

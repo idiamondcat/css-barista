@@ -1,6 +1,8 @@
-import { ILevel } from '../app/utils/types';
+import { ILevel, States } from '../app/utils/types';
 const levels: ILevel[] = [
   {
+    id: 1,
+    state: States.NotCompleted,
     title: 'Select all tea',
     selector: ['tea', '*'],
     markup: `<tea class="thai"></tea>
@@ -9,6 +11,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 2,
+    state: States.NotCompleted,
     title: 'Select green tea',
     selector: ['.green', 'tea:nth-child(2)'],
     markup: `<tea class="black"></tea>
@@ -17,6 +21,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 3,
+    state: States.NotCompleted,
     title: 'Select black tea and taiwanese tea',
     selector: ['tea:nth-of-type(2n+2)', 'tea:nth-of-type(even)'],
     markup: `<tea class="matcha-latte"></tea>
@@ -26,6 +32,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 4,
+    state: States.NotCompleted,
     title: 'Select strawberry tea',
     selector: ['#strawberry', 'tea:first-child'],
     markup: `<tea id="strawberry"></tea>
@@ -34,6 +42,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 5,
+    state: States.NotCompleted,
     title: 'Select all drinks',
     selector: ['*'],
     markup: `<tea class="black"></tea>
@@ -42,6 +52,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 6,
+    state: States.NotCompleted,
     title: 'Select lychee soda, using + selector',
     selector: ['.melon+.lychee', '.lychee'],
     markup: `<soda class="yuzu"></soda>
@@ -50,6 +62,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 7,
+    state: States.NotCompleted,
     title: 'Select soda, using ~ selector',
     selector: ['icedtea~soda'],
     markup: `<icedtea class="ginger"></icedtea>
@@ -59,6 +73,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 8,
+    state: States.NotCompleted,
     title: 'Select first icedtea',
     selector: ['icedtea:first-child'],
     markup: `<icedtea class="thai"></icedtea>
@@ -67,6 +83,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 9,
+    state: States.NotCompleted,
     title: 'Select all tea except last one',
     selector: ['tea:not(:last-child)'],
     markup: `<tea class="green"></tea>
@@ -75,6 +93,8 @@ const levels: ILevel[] = [
         `,
   },
   {
+    id: 10,
+    state: States.NotCompleted,
     title: 'Select only one drink',
     selector: ['icedtea:only-of-type'],
     markup: `<tea class="thai"></tea>

@@ -83,4 +83,7 @@
             z-index: 10;
         }
     }
+    @media screen and (max-width: 432px) {
+        max-width: 85%;
+    }
 }

@@ -16,6 +16,11 @@
         background-image: url('../../../img/close.svg');
         background-repeat: no-repeat;
         background-position: center center;
+        &:hover {
+            cursor: pointer;
+            opacity: .5;
+            transition: opacity 0.2s ease-in;
+        }
     }
     & .popup__wrapper {
         display: flex;
@@ -47,6 +52,17 @@
             size: 1rem;
             weight: 400;
         }
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+    @media screen and (max-width: 559px) {
+        width: 350px;
+    }
+    @media screen and (max-width: 424px) {
+        width: 230px;
     }
 }
 @keyframes fadeIn {

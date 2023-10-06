@@ -60,4 +60,14 @@
             zoom: 0.5;
         }
     }
+    @media screen and (max-width: 443px) {
+        & .view__gamefield {
+            zoom: 0.45;
+        }
+    }
+    @media screen and (max-width: 405px) and (min-width: 363px) {
+        & .view__gamefield {
+            zoom: 0.4;
+        }
+    }
 }
