@@ -84,7 +84,6 @@ img {
 }
 .bounce-6 {
     animation-name: bounce-6;
-    // animation-timing-function: linear;
 }
 @keyframes bounce-6 {
     0%   { transform: scale(1,1)      translateY(0); -webkit-animation-timing-function: linear }
