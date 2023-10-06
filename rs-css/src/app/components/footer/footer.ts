@@ -1,7 +1,7 @@
 import './footer.scss';
 import { Element } from '../../utils/types';
-import rsLogo from '../../../img/rs_school_js.svg';
-import gitLogo from '../../../img/github.svg';
+import rsLogo from '../../../assets/img/rs_school_js.svg';
+import gitLogo from '../../../assets/img/github.svg';
 
 export default class Footer {
   public createFooter(): HTMLElement {
